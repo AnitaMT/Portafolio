@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <!-- Enlace a Bootstrap para estilos prediseñados -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace a FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Contenedor de la Barra de Navegación-->
+        <div class="container">
+            <!--Título del Proyecto-->
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <!--Icono Burger para cuando se haga más pequeño el navegador-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Barra de Navegación colapsable-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--Elementos de la Barra de Navegación, que son además, los diferentes apartados del Portafolio-->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header class="hero text-center py-5">
+        <!--Foto de Perfil-->
+        <img src="https://m.media-amazon.com/images/I/51zkmqAULvL._AC_UF894,1000_QL80_.jpg" alt="Foto de perfil"
+            class="rounded-circle" width="150">
+        <!--Título Principal: Mi nombre y descripción-->
+        <h1 class="mt-3">Hola, soy Ana Morillo Troya</h1>
+        <p>Desarrolladora Web Junior</p>
+    </header>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="container my-5">
+        <!--Título de la Sección-->
+        <h2 class="text-center">Experiencia</h2>
+        <!--Front-end -->
+        <div class="row text-center">
+            <div class="col-md-4" style="background-color: lightblue; border-radius: 1em; padding: 1em;">
+                <img src="https://cdn-icons-png.flaticon.com/512/8099/8099697.png" alt="front-end"
+                    class="img-fluid rounded-square" width="50">
+                <h4>Front-end</h4>
+                <p>Me encuentro familiarizada con:</p>
+                <!--Badges para Elementos-->
+                <span class="badge bg-info"><a href="http://www.google.es">HTML</a></span>
+                <span class="badge bg-info">CSS</span>
+                <span class="badge bg-info">JavaScript</span>
+                <span class="badge bg-info">Bootstrap</span>
+            </div>
+        <!--Back-end -->
+            <div class="col-md-4" style="padding: 1em; border: 2px solid lightblue; border-radius: 1em;">
+                <img src="https://cdn-icons-png.flaticon.com/512/8099/8099442.png" alt="back-end"
+                    class="img-fluid rounded-square" width="50">
+                <h4>Back-end</h4>
+                <p>Domino por completo:</p>
+                <!--Badges para Elementos-->
+                <span class="badge bg-info">Python</span>
+                <span class="badge bg-info">Django</span>
+            </div>
+        <!--Herramientas -->
+            <div class="col-md-4" style="background-color: lightblue; border-radius: 1em; padding: 1em;">
+                <img src="https://cdn-icons-png.freepik.com/512/8759/8759087.png" alt="back-end"
+                    class="img-fluid rounded-square" width="50">
+                <h4>Herramientas</h4>
+                <p>Controlo con fluidez:</p>
+                <!--Badges para Elementos-->
+                <span class="badge bg-info">Git</span>
+                <span class="badge bg-info">Github</span>
+                <span class="badge bg-info">Docker</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="bg-light py-5">
+        <!--Contenedor de la Sección Proyectos-->
+        <div class="container">
+            <h2 class="text-center">Mis proyectos recientes</h2>
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-4">
+                    <!--Div que crea la "card" -->
+                    <div class="card position-relative">
+                        <!--Imagen del Proyecto-->
+                        <img src="https://i.blogs.es/5d2308/portada-mejores-juegos-el-senor-de-los-anillos/1366_2000.jpeg"
+                            class="card-img-top" alt="Proyecto 1">
+                            <!--Al hacer hover aparecerá lo que hay en overlay-->
+                        <div class="overlay">
+                            <a href="https://github.com/AnitaMT/DIW" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/martitavm/juego-tierra-media-django" target="_blank"><i
+                                    class="fas fa-laptop-code"></i></a>
+                        </div>
+                        <!--Div para crea "card" para el body, es decir, lo que se podrá leer en el navegador.-->
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 1 - Juego Tierra Media</h5>
+                            <p class="card-text">Juego de batallas basado en El Señor de los Anillos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="https://www.ikea.com/images/ikea-shopping-app-d437074b5c45af07279ad341ff5772b7.jpg?f=s"
+                            class="card-img-top" alt="Proyecto 2">
+                        <div class="overlay">
+                            <a href="https://github.com/AnitaMT/DIW" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.ikea.com/es/es/cat/colchones-bm002/" target="_blank"><i
+                                    class="fas fa-laptop-code"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2 - Web Ikea</h5>
+                            <p class="card-text">Zona de colchones de la página web de Ikea España.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/1272/cached.offlinehbpl.hbpl.co.uk/news/KMP/ctilb.png"
+                            class="card-img-top" alt="Proyecto 3">
+                        <div class="overlay">
+                            <a href="https://github.com/AnitaMT/DIW" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.charlottetilbury.com/es/products/maquillaje/labios/labial?srsltid=AfmBOoqr6MWXnJ-BAaAAEOgu1KZ2t-ZhJgUm5LX98ZNcbbIfD2bp_012"
+                                target="_blank"><i class="fas fa-laptop-code"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3 - Charlotte Tilbury</h5>
+                            <p class="card-text">Remodelación de la sección de labiales de la web de Charlotte Tilbury.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1222670/capsule_616x353.jpg?t=1738870917"
+                            class="card-img-top" alt="Proyecto 1">
+                        <div class="overlay">
+                            <a href="https://github.com/AnitaMT/DIW" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.ea.com/es/games/the-sims/the-sims-4" target="_blank"><i
+                                    class="fas fa-laptop-code"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 4 - Los Sims4</h5>
+                            <p class="card-text">Desarrollo de mapas y nuevos añadidos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="https://www.jvfrance.com/wp-content/uploads/2020/03/ac.jpg" class="card-img-top"
+                            alt="Proyecto 2">
+                        <div class="overlay">
+                            <a href="https://github.com/AnitaMT/DIW" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://animalcrossing.nintendo.com/es/" target="_blank"><i
+                                    class="fas fa-laptop-code"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 5 - Animal Crossing</h5>
+                            <p class="card-text">Soporte en el mantenimiento de Animal Crossing.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <img src="https://www.adslzone.net/app/uploads-adslzone.net/2023/09/aliexpress.jpg"
+                            class="card-img-top" alt="Proyecto 3">
+                        <div class="overlay">
+                            <a href="https://github.com/AnitaMT/DIW" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://sale.aliexpress.com/es/__pc/plaza_channel_fashion_pc.htm"
+                                target="_blank"><i class="fas fa-laptop-code"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 6 - Aliexpress</h5>
+                            <p class="card-text">Mantenimiento de Aliexpress Plaza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Botón más información-->
+        <div class="text-center mt-4">
+            <a href="https://github.com/AnitaMT/DIW" target="_blank" class="btn btn-info text-white"
+                style="font-weight: bold;">
+                Ver más proyectos <i class="fas fa-arrow-right"></i>
+            </a>
+    </section>
+
+    <!-- Sección Artículos -->
+    <section id="articulos" class="container my-5">
+        <!--Título de la Sección-->
+        <h2 class="text-center">Artículos Recientes</h2>
+        <!--Uso de list-group-->
+        <div class="list-group">
+            <div class="list-group-item" style="background-color: lightblue; font-weight: bold;">
+                <p class="mb-1">Más recientes</p>
+            </div>
+            <!-- Artículo 1 -->
+            <a href="https://www.farmaciasdirect.es/blogs/cabello/como-fortalecer-el-pelo-para-que-no-se-caiga"
+                target="_blank" class="list-group-item list-group-item-action">
+                <h5 class="mb-1" style="font-weight: bold;">Cómo aprobar el curso sin perder el pelo</h5>
+                <p class="mb-1">Una guía completa para evitar la calvicie y aprobar todas las asignaturas.</p>
+            </a>
+            <!-- Artículo 2 -->
+            <a href="https://www.gastroactitud.com/pista/las-mejores-croquetas-espana/" target="_blank"
+                class="list-group-item list-group-item-action list-group-item-info">
+                <h5 class="mb-1" style="font-weight: bold;">Por qué no confiar en los que no comen croquetas</h5>
+                <p class="mb-1">Conoce los motivos por los que las personas que no comen croquetas no son de fiar.</p>
+            </a>
+            <!-- Artículo 3 -->
+            <a href="https://learn.microsoft.com/es-es/shows/beginners-series-to-javascript/" target="_blank"
+                class="list-group-item list-group-item-action">
+                <h5 class="mb-1" style="font-weight: bold;">JavaScript para principiantes</h5>
+                <p class="mb-1">Un tutorial que cubre los aspectos básicos de JavaScript para comenzar a programar.</p>
+            </a>
+            <!-- Artículo 4 -->
+            <a href="https://www.eniun.com/examenes-html-css-avanzado/" target="_blank"
+                class="list-group-item list-group-item-action list-group-item-info">
+                <h5 class="mb-1" style="font-weight: bold;">Usa HTML y CSS como un profesional </h5>
+                <p class="mb-1">Una guía completa para hacer uso de HTML y CSS avanzado.</p>
+            </a>
+            <!-- Artículo 5 -->
+            <a href="https://www.dreamhost.com/blog/es/bootstrap-guia-completa/" target="_blank"
+                class="list-group-item list-group-item-action">
+                <h5 class="mb-1" style="font-weight: bold;">Guía de uso de Boostrap</h5>
+                <p class="mb-1">Aprende a usar Boostrap con fluidez con estos tips.</p>
+            </a>
+            <!-- Artículo 6 -->
+            <a href="https://www.hostinger.es/tutoriales/ideas-para-paginas-web" target="_blank"
+                class="list-group-item list-group-item-action list-group-item-info">
+                <h5 class="mb-1" style="font-weight: bold;">Ideas de proyectos de webs</h5>
+                <p class="mb-1">Ideas originales para tu proyecto final de grado.</p>
+            </a>
+        </div>
+        <!--Botón más información-->
+        <div class="text-center mt-4">
+            <a href="https://www.humanlevel.com/blog/desarrollo-web" target="_blank" class="btn btn-info text-white"
+                style="font-weight: bold;">
+                Ver más artículos <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="bg-light py-5">
+        <!--Contenedor de la Sección Testimonios-->
+        <div class="container">
+            <!--Título de la Sección-->
+            <h2 class="text-center">Testimonios</h2>
+            <!--Div para crear el carrusel para los testimonios -->
+            <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!--Testimonio 1-->
+                    <div class="carousel-item active">
+                        <div class="text-center p-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnD1BEXneQ4tmb9o5CO1S0rJQo_hlpny-Tw&s"
+                                alt="Foto usuario" class="rounded-circle" width="100" height="100">
+                            <p>"Sus proyectos todo que ver."</p>
+                            <h5>- Martita Hello Kitty</h5>
+                        </div>
+                    </div>
+                    <!--Testimonio 2-->
+                    <div class="carousel-item">
+                        <div class="text-center p-4">
+                            <img src="https://images7.memedroid.com/images/UPLOADED322/634084e6e7085.jpeg"
+                                alt="Foto usuario" class="rounded-circle" width="100" height="100">
+                            <p>"Muy profesional y con gran conocimiento en el área."</p>
+                            <h5>- Currín LinuxPro</h5>
+                        </div>
+                    </div>
+                    <!--Testimonio 3-->
+                    <div class="carousel-item">
+                        <div class="text-center p-4">
+                            <img src="https://i.pinimg.com/736x/b9/23/e3/b923e3546251621205662f3cbd1cb402.jpg"
+                                alt="Foto usuario" class="rounded-circle" width="100" height="100">
+                            <p>"Trabajo impecable, la contrataría."</p>
+                            <h5>- Isma Boss</h5>
+                        </div>
+                    </div>
+                    <!--Testimonio 4-->
+                    <div class="carousel-item">
+                        <div class="text-center p-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLI29s8yzuwCgLhZo2FBiEgr053w9t3ahOKA&s"
+                                alt="Foto usuario" class="rounded-circle" width="100" height="100">
+                            <p>"Me gustan las tartas de queso, pero me gustan más aún sus proyectos."</p>
+                            <h5>- Estefany Supremacy</h5>
+                        </div>
+                    </div>
+                </div>
+                <!--Botones para desplazar testimonios-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Contacto -->
+    <footer id="contacto" class="text-white text-center py-4">
+        <p>Sígueme en mis redes sociales:</p>
+        <a href="https://x.com/Shanniissss?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/jmrivas86" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        <a href="https://es.linkedin.com/in/ireneecofol?trk=public_profile_browsemap" class="text-white mx-2"><i
+                class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kimkardashian/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/maria.patino.fans/?locale=es_ES" class="text-white mx-2"><i
+                class="fab fa-facebook"></i></a>
+        <p class="mt-3">&copy; 2025 Ana Morillo Troya</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

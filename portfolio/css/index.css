@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente elegida para la web*/
+    background-color: #f0f8ff; /* Color de fondo claro para una apariencia limpia */
+    color: #333; /* Color de texto oscuro para mejorar la legibilidad */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4ec7ff !important; /* Color azul vibrante para la barra de navegación */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto elevado */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Hace que el nombre de la marca se destaque */
+    font-size: 1.5rem; /* Tamaño adecuado para la marca en la barra de navegación */
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Color blanco para mayor contraste y visibilidad */
+    font-weight: bold; /* Enfatiza los enlaces del menú */
+    transition: color 0.3s ease-in-out; /* Efecto de transición suave en el cambio de color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cce7ff !important; /* Color más claro al pasar el mouse para mejor efecto visual */
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(to right, #64c9f8, #02a9e0); /* Degradado atractivo para la sección principal */
+    color: white; /* Texto en blanco para un buen contraste */
+    padding: 4rem 0; /* Espaciado generoso para dar aire */
+    text-align: center; /* Centra el contenido para mejor estética */
+}
+
+.hero img {
+    border: 4px solid white; /* Borde blanco para resaltar la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    transition: transform 0.3s ease-in-out; /* Suaviza la animación al hacer hover */
+}
+
+.hero img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+/* Sección Experiencia */
+#experiencia .col-md-4 {
+    text-align: center; /* Centra el contenido de cada columna */
+    padding: 1.5em; /* Espaciado interno cómodo */
+    border-radius: 1em; /* Bordes redondeados para un diseño moderno */
+    background-color: #e3f2fd; /* Color de fondo suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza el cambio de escala y sombra */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial leve */
+}
+
+#experiencia .col-md-4:hover {
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para destacar la tarjeta */
+}
+
+.badge {
+    font-size: 1rem; /* Tamaño legible */
+    padding: 0.6em 1em; /* Espaciado adecuado */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Sección Proyectos */
+#proyectos {
+    background-color: #f8f9fa; /* Fondo neutro para diferenciar la sección */
+    padding: 4rem 0; /* Espaciado uniforme */
+}
+
+.card {
+    border-radius: 12px; /* Bordes redondeados para un diseño más bonito */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza animaciones */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: relative; /* Posicionamiento relativo para elementos internos */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para destacar */
+}
+
+.card-title {
+    font-weight: bold; /* Destaca el título */
+    color: #4ec7ff; /* Color azul para resaltar */
+}
+
+.card .overlay {
+    position: absolute; /* Cubre completamente la tarjeta */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.8); /* Fondo semitransparente */
+    color: white; /* Texto blanco para contraste */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out; /* Efecto de aparición */
+}
+
+.card:hover .overlay {
+    opacity: 1; /* Muestra la capa al pasar el ratón */
+}
+
+.overlay a {
+    color: white; /* Enlaces en blanco */
+    font-size: 24px; /* Tamaño legible */
+    margin: 10px; /* Espaciado adecuado */
+    transition: transform 0.2s; /* Suaviza la animación */
+}
+
+.overlay a:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+}
+
+/* Botón de Ver más */
+.btn-info {
+    border: none; /* Elimina bordes predeterminados */
+    font-weight: bold; /* Resalta el texto */
+    padding: 0.8rem 1.5rem; /* Tamaño adecuado */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background 0.3s ease-in-out, transform 0.2s; /* Animaciones suaves */
+}
+
+.btn-info:hover {
+    background-color: #0056b3 !important; /* Color azul oscuro al pasar el ratón */
+    transform: scale(1.05); /* Ligeramente más grande */
+}
+
+/* Sección Testimonios */
+#testimonios {
+    background-color: #e3f2fd; /* Color de fondo suave */
+    padding: 4rem 0; /* Espaciado uniforme */
+}
+
+#testimonios img {
+    border: 3px solid #4ec7ff; /* Borde azul para destacar imágenes */
+    border-radius: 50%; /* Imágenes circulares */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(95%); /* Mejora la visibilidad de los controles */
+}
+
+/* Footer */
+footer {
+    background-color: #4ec7ff; /* Color de fondo azul */
+    color: white; /* Texto en blanco */
+    padding: 2rem 0; /* Espaciado adecuado */
+    text-align: center; /* Centrado */
+}
+
+footer a {
+    color: white; /* Enlaces en blanco */
+    font-size: 1.5rem; /* Tamaño adecuado */
+    transition: transform 0.3s, color 0.3s; /* Suaviza las animaciones */
+}
+
+footer a:hover {
+    transform: scale(1.2); /* Efecto de aumento al pasar el ratón */
+    color: #cce7ff; /* Color más claro */
+}
+
